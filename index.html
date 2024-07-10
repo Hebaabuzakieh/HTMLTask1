@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+      
+        .header .container, .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header .logo, .footer .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav, .footer .nav {
+            display: flex;
+            gap: 15px;
+        }
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .header .search-bar input {
+            padding: 5px;
+        }
+        main {
+            flex: 1;
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .main-content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../HTMLTask1/images/Icon.png" alt="Logo" width="50">
+                <span>COMPANY NAME</span>
+            </div>
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Company</a>
+                <a href="#">More</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <h1>Headline</h1>
+        <div class="main-content">
+            <div class="card">
+                <img src="../HTMLTask1/images/image 18.png" alt="Placeholder" style="width: 500px;height:250px ;">
+                <h2>Subhead 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt augue suscipit orci hendrerit malesuada id et tellus. Ut rutrum quam eget enim ultricies sodales. Quisque efficitur erat a volutpat tristique. Fusce condimentum purus in urna scelerisque volutpat.</p>
+                <a href="#" class="button">Button</a>
+            </div>
+            <div class="card">
+                <img src="../HTMLTask1/images/image 19.png" alt="Placeholder" style="width: 500px;height:250px;">
+                <h2>Subhead 2</h2>
+                <p>Quisque efficitur erat a volutpat tristique. Fusce condimentum purus in urna scelerisque volutpat. Duis porttitor massa nec enim malesuada, vitae aliquam neque vulputate. Morbi dictum ex porta, condimentum diam et, placerat magna.</p>
+                <a href="#" class="button">Button</a>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="container">
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Company</a>
+                <a href="#">More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
